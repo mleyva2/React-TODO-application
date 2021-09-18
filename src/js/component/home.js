@@ -1,7 +1,14 @@
 import React from "react";
-import { ToDo } from "./todo";
+
+//include images into your bundle
+
+import { TodoList } from "./todolist";
 
 //create your first component
 export function Home() {
-	return <ToDo />;
+	return (
+		<div className="text-center mt-5">
+			<TodoList />
+		</div>
+	);
 }
